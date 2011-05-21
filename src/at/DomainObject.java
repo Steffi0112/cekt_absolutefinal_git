@@ -25,4 +25,16 @@ private String name;
 
 public String id = UUID.randomUUID().toString()
 
+private String comment;
+
+
+public String getComment() {
+   return comment;
+}
+
+public void setComment(String comment) {
+   this.comment = comment;
+}
+
+
 }
