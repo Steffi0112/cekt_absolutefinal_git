@@ -10,7 +10,11 @@ public class DomainObject {
 		super();
 	}
 
-private String id;
+public String toString() {
+   return "DomainObject [name=" + name + ", comment=" + comment
+           + ", uuid=" + uuid + "]";
+}
+
 
 public DomainObject(String name, String comment)  {
   super();
