@@ -17,6 +17,8 @@ public String getId() {
    return id;
 }
 
+private String name;
+
 
 
 }
