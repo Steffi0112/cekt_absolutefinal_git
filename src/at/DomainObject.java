@@ -1,6 +1,7 @@
 package at;
 
-public class DomainObject {
+public class DomainObject implements Comparable<DomainObject> {
+
 	/**
 	 * Default constructor
 	 */
@@ -10,7 +11,11 @@ public class DomainObject {
 		super();
 	}
 
-private String id;
+public String toString() {
+   return "DomainObject [name=" + name + ", comment=" + comment
+           + ", uuid=" + uuid + "]";
+}
+
 
 protected DomainObject(String name, String comment)  {
   super();
@@ -43,6 +48,23 @@ public String getName() {
 public void setName(final String name) {
    this.name = name;
 }
+
+public boolean equals(Object obj) {
+   if (!(obj instanceof DomainObject)) {
+      return false;
+   }
+   DomainObject domainObj = (DomainObject) obj;
+   return uuid.equals(domainObj.getUuid());
+}
+
+public int compareTo(DomainObject o) {
+   DomainObject domainObj = (DomainObject) o;
+   int domObjeComp = name.compareTo(domainObj.getName());
+
+  return ((domObjeComp == 0) ? uuid.compareTo(domainObj.getUuid()) : 
+           domObjeComp);
+}
+
 
 
 }
