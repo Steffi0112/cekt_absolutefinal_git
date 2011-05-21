@@ -13,5 +13,6 @@ public DomainObject(String id) {
   this.id = id;
 }
 
+private String name;
 
 }
