@@ -12,7 +12,7 @@ public class DomainObject {
 
 private String id;
 
-public DomainObject(String id) {
+public DomainObject(String name, String comment)  {
   super();
   this.id = id;
 }
