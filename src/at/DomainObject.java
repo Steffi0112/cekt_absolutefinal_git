@@ -32,7 +32,7 @@ public String getComment() {
    return comment;
 }
 
-public void setComment(String comment) {
+public void setComment(final String comment) {
    this.comment = comment;
 }
 
@@ -40,7 +40,7 @@ public String getName() {
    return name;
 }
 
-public void setName(String name) {
+public void setName(final String name) {
    this.name = name;
 }
 
