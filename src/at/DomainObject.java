@@ -48,5 +48,13 @@ public void setName(final String name) {
    this.name = name;
 }
 
+public boolean equals(Object obj) {
+   if (!(obj instanceof DomainObject)) {
+      return false;
+   }
+   DomainObject domainObj = (DomainObject) obj;
+   return uuid.equals(domainObj.getUuid());
+}
+
 
 }
