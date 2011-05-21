@@ -1,6 +1,10 @@
 package at;
 
 public class DomainObject {
+	/**
+	 * Default constructor
+	 */
+
 
 	public DomainObject() {
 		super();
