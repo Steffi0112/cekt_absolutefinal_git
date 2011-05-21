@@ -23,6 +23,6 @@ public String getId() {
 
 private String name;
 
-
+public String id = UUID.randomUUID().toString()
 
 }
