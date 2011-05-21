@@ -17,13 +17,6 @@ public String toString() {
 }
 
 
-public int hashCode() {
-   if (uuid != null) {
-      return uuid.hashCode();
-   } else {
-      return super.hashCode();
-   }
-}
 
 public DomainObject(String name, String comment)  {
   super();

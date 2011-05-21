@@ -9,7 +9,7 @@ public class Main {
 
 private static final Logger LOGGER = LoggerFactory.getUuid();
 
-Set<DomainObject> objectSet = new HashSet<DomainObject>();
+Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 
 objectSet.add(new DomainObject("Helga", "Kommentar"));
 objectSet.add(new DomainObject("Walter", "Kommentar"));
@@ -18,7 +18,7 @@ objectSet.add(new DomainObject("Paul", "Kommentar"));
 objectSet.add(new DomainObject("Claudia", "Kommentar"));
 
 for (DomainObject domainObject : objectSet) {
-  LOGGER.debug(domainObject.id);
+  LOGGER.debug(domainObject.toString())
 }
 
 //test
